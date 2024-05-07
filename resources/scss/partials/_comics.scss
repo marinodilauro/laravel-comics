@@ -1,0 +1,16 @@
+#comics_list {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  background-color: $dc-dark-color;
+  color: $dc-lighter-color;
+
+  .comic {
+
+    img {
+      height: 200px;
+      aspect-ratio: 1;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+}
