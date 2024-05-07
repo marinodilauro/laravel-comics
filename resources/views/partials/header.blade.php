@@ -27,25 +27,25 @@
         <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="">
       </div>
 
-      <ul class="navbar d-flex list-unstyled oxanium-bold gap-5 p-0 m-0">
-        <li><a href="{{route('characters')}}">CHARACTERS</a></li>
-        <li><a href="{{route('comics')}}">COMICS</a></li>
-        <li><a href="{{route('movies')}}">MOVIES</a></li>
-        <li><a href="{{route('tv')}}">TV</a></li>
-        <li><a href="{{route('games')}}">GAMES</a></li>
-        <li><a href="{{route('collectibles')}}">COLLECTIBLES</a></li>
-        <li><a href="{{route('videos')}}">VIDEOS</a></li>
-        <li><a href="{{route('fans')}}">FANS</a></li>
-        <li><a href="{{route('news')}}">NEWS</a></li>
-        <li><a href="{{route('shop')}}">SHOP <i class="fa-solid fa-chevron-down fa-xs"></i> </a></li>
-      </ul>
+      <nav class="nav justify-content-center">
+        <a class="nav-link {{Route::currentRouteName() === 'characters' ? 'active' : '' }}" href="{{route('characters')}}">CHARACTERS</a>
+        <a class="nav-link {{Route::currentRouteName() === 'comics' ? 'active' : '' }}" href="{{route('comics')}}">COMICS</a>
+        <a class="nav-link {{Route::currentRouteName() === 'movies' ? 'active' : '' }}" href="{{route('movies')}}">MOVIES</a>
+        <a class="nav-link {{Route::currentRouteName() === 'tv' ? 'active' : '' }}" href="{{route('tv')}}">TV</a>
+        <a class="nav-link {{Route::currentRouteName() === 'games' ? 'active' : '' }}" href="{{route('games')}}">GAMES</a>
+        <a class="nav-link {{Route::currentRouteName() === 'collectibles' ? 'active' : '' }}" href="{{route('collectibles')}}">COLLECTIBLES</a>
+        <a class="nav-link {{Route::currentRouteName() === 'videos' ? 'active' : '' }}" href="{{route('videos')}}">VIDEOS</a>
+        <a class="nav-link {{Route::currentRouteName() === 'fans' ? 'active' : '' }}" href="{{route('fans')}}">FANS</a>
+        <a class="nav-link {{Route::currentRouteName() === 'news' ? 'active' : '' }}" href="{{route('news')}}">NEWS</a>
+        <a class="nav-link {{Route::currentRouteName() === 'shop' ? 'active' : '' }}" href="{{route('shop')}}">SHOP <i class="fa-solid fa-caret-down fa-xs"></i> </a>
+        </ul>
 
-      <div class="search d-flex align-items-center px-4">
-        <div class="search_bar rounded d-flex align-items-center">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="search" placeholder="Search">
+        <div class="search d-flex align-items-center px-4">
+          <div class="search_bar d-flex justify-content-end align-items-center">
+            <input type="search" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass p-0"></i>
+          </div>
         </div>
-      </div>
 
     </div>
 
