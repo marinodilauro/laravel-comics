@@ -36,6 +36,8 @@
 
 #cta_banner {
   background-color: $dc-primary-color;
+  position: relative;
+  z-index: 2;
 
   a {
     text-decoration: none;
