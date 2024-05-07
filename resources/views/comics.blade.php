@@ -6,8 +6,8 @@
 <!-- Comics List -->
 <div id="comics_list">
     <section class="py-4">
+        <h2 id="page_title">CURRENT SERIES</h2>
         <div class="container">
-            <h2 id="page_title">CURRENT SERIES</h2>
             <div class="row row-cols-1 row-cols-md-4 row-cols-lg-6">
 
                 @foreach($comics as $comic)
