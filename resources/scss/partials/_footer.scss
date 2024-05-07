@@ -40,55 +40,28 @@
   }
 
   #footer_bottom {
-    height: 100px;
     background-color: $dc-footer-bottom-bg-bolor;
     position: relative;
     z-index: 2;
 
-    a {
-      height: 100%;
-      color: $dc-font-dark-color;
+
+    .sign_up_btn {
+      background-color: $dc-footer-bottom-bg-bolor;
+      border: 2px solid $dc-primary-color;
+      color: #ffffff;
+      font-family: "Open Sans", sans-serif;
+      width: 131px;
     }
 
-
-
-    i {
-      color: $dc-primary-color
-    }
-
-    .active {
+    span {
+      font-family: "PT Sans Narrow", sans-serif;
+      font-weight: bold;
       color: $dc-primary-color;
-      border-bottom: 2px solid $dc-primary-color;
     }
 
-    .search {
-      background-color: white;
-
-      height: 50px;
-
-      .search_bar {
-        width: 95%;
-        height: 35px;
-        background-color: white;
-        border-bottom: 2px solid $dc-primary-color;
-
-
-        i {
-          color: black;
-          padding: 0.5rem;
-        }
-
-        input {
-          width: 85%;
-          height: 30px;
-          padding: 0.5rem 0;
-          border: none;
-          outline: none;
-
-          &::placeholder {
-            text-align: end;
-          }
-        }
+    .social_icons {
+      img {
+        padding-right: 0.8rem;
       }
     }
   }

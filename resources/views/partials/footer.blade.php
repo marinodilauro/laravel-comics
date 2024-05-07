@@ -80,7 +80,31 @@
   </div>
 
   <div id="footer_bottom">
+    <div class="container py-4">
+      <div class="row d-flex justify-content-between align-items-center ">
 
+        <div class="col">
+          <button type="button" class="rounded-0 sign_up_btn p-2">SIGN-UP NOW!</button>
+        </div>
+
+        <div class="col">
+          <div class="d-flex justify-content-center align-items-center gap-3">
+
+            <span>FOLLOW US</span>
+
+            <div class="social_icons">
+              <img src="{{Vite::asset('resources/img/footer-facebook.png')}}" alt="">
+              <img src="{{Vite::asset('resources/img/footer-periscope.png')}}" alt="">
+              <img src="{{Vite::asset('resources/img/footer-pinterest.png')}}" alt="">
+              <img src="{{Vite::asset('resources/img/footer-twitter.png')}}" alt="">
+              <img src="{{Vite::asset('resources/img/footer-youtube.png')}}" alt="">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 
 </footer>
