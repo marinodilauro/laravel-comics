@@ -2,24 +2,26 @@
 
   <header id="header">
 
-    <div class="container">
+    <div id="header_top">
+      <div class="container py-2">
 
-      <!-- Header top -->
-      <ul class="d-flex list-unstyled p-0 m-0">
+        <!-- Header top -->
+        <ul class="d-flex justify-content-end list-unstyled p-0 m-0 gap-3">
 
-        <li><a href="">DC POWER VISA &trade;</a></li>
+          <li><a class="me-1" href="">DC POWER&#8480; VISA</a><i class="fa-regular fa-registered"></i></li>
 
-        <li>
-          <a href="">ADDITIONAL DC SITES</a>
-          <i class="fa-solid fa-chevron-down fa-xs"></i>
-        </li>
+          <li>
+            <a href="">ADDITIONAL DC SITES</a>
+            <i class="fa-solid fa-caret-down"></i>
+          </li>
 
-      </ul>
+        </ul>
 
+      </div>
     </div>
 
     <!-- Header Navbar -->
-    <div class="container d-flex align-items-center justify-content-between">
+    <div id="navbar" class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
         <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="">
