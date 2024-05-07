@@ -1,1 +1,28 @@
 @import '~bootstrap/scss/bootstrap';
+
+.search {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+
+  .search_bar {
+    width: 95%;
+    height: 35px;
+    background-color: white;
+    box-shadow: inset 0 0 0 1px blue;
+    border-radius: 3px;
+
+    i {
+      color: black;
+      padding: 0.5rem;
+    }
+
+    input[type=search] {
+      width: 85%;
+      height: 30px;
+      padding: 0.5rem 0;
+      border: none;
+      outline: none;
+    }
+  }
+}
