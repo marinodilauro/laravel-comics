@@ -3,23 +3,23 @@
 @section('content')
 
 
+<!-- Comics List -->
 <div id="comics_list">
     <section class="py-4">
         <div class="container">
-            <h1 id="page_title">CURRENT SERIES</h1>
-            <div class="row row-cols-1 row-cols-md-4 row-cols-lg-6 g-5">
+            <h2 id="page_title">CURRENT SERIES</h2>
+            <div class="row row-cols-1 row-cols-md-4 row-cols-lg-6">
 
                 @foreach($comics as $comic)
                 <div class="col mt-3">
-                    <div class="comic border-0">
 
-                        <img class="img-flud" src="{{$comic['thumb']}}" alt="Cover image of {{$comic['title']}}">
 
-                        <div class="comic_serie mt-3 mb-4">
-                            {{strtoupper($comic['series'])}}
-                        </div>
+                    <img class="img-flud" src="{{$comic['thumb']}}" alt="Cover image of {{$comic['title']}}">
 
+                    <div class="comic_serie mt-3 mb-4">
+                        {{strtoupper($comic['series'])}}
                     </div>
+
                 </div>
                 @endforeach
 
@@ -33,5 +33,63 @@
     </section>
 </div>
 
+<!-- CTAs Banner -->
+<div id="cta_banner">
+    <div class="container d-flex align-items-center px-3 py-5">
+        <ul class="flex-fill list-unstyled d-flex justify-content-between align-items-center m-0 gap-5">
+
+            <li>
+                <a class="digital_comics d-flex align-items-center gap-3" href="">
+
+                    <img src="{{Vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="">
+
+                    <span>DIGITAL COMICS</span>
+
+                </a>
+            </li>
+
+            <li>
+                <a class="dc_merch d-flex align-items-center gap-3" href="">
+
+                    <img src="{{Vite::asset('resources/img/buy-comics-merchandise.png')}}" alt="">
+
+                    <span>DC MERCHANDISE</span>
+
+                </a>
+            </li>
+
+            <li>
+                <a class="subscriptions d-flex align-items-center gap-3" href="">
+
+                    <img src="{{Vite::asset('resources/img/buy-comics-subscriptions.png')}}" alt="">
+
+                    <span>SUBSCRIPTION</span>
+
+                </a>
+            </li>
+
+            <li>
+                <a class="shop_locator d-flex align-items-center gap-3" href="">
+
+                    <img src="{{Vite::asset('resources/img/buy-comics-shop-locator.png')}}" alt="">
+
+                    <span>COMIC SHOP LOCATION</span>
+
+                </a>
+            </li>
+
+            <li>
+                <a class="dc_power_visa d-flex align-items-center gap-3" href="">
+
+                    <img src="{{Vite::asset('resources/img/buy-dc-power-visa.svg')}}" alt="">
+
+                    <span>DC POWER VISA</span>
+
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
 
 @endsection

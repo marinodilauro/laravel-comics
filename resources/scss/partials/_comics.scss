@@ -8,7 +8,7 @@
   #page_title {
     font-family: "PT Sans Narrow", sans-serif;
     font-weight: bold;
-    width: 315px;
+    width: 267px;
     background-color: #0282f9;
     position: relative;
     top: -65px;
@@ -16,15 +16,13 @@
     padding: 16px 36px 16px 36px;
   }
 
-  .comic {
-
-    img {
-      height: 200px;
-      aspect-ratio: 1;
-      object-fit: cover;
-      object-position: top;
-    }
+  img {
+    height: 176px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
   }
+
 
   .load_more_btn {
     font-family: "PT Sans Narrow", sans-serif;
@@ -33,5 +31,30 @@
     color: #ffffff;
     width: 181px;
     background-color: #0282f9;
+  }
+}
+
+#cta_banner {
+  background-color: $dc-primary-color;
+
+  a {
+    text-decoration: none;
+    color: $dc-lighter-color;
+    font-size: 0.9rem;
+  }
+
+  .digital_comics,
+  .shop_locator {
+    img {
+      max-height: 50px;
+    }
+  }
+
+  .dc_merch,
+  .subscriptions,
+  .dc_power_visa {
+    img {
+      max-width: 50px;
+    }
   }
 }
