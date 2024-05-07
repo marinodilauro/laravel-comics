@@ -36,7 +36,7 @@
 <!-- CTAs Banner -->
 <div id="cta_banner">
     <div class="container d-flex align-items-center px-3 py-5">
-        <ul class="flex-fill list-unstyled d-flex justify-content-between align-items-center m-0 gap-5">
+        <ul class="flex-fill list-unstyled d-flex justify-content-between align-items-center m-0">
 
             <li>
                 <a class="digital_comics d-flex align-items-center gap-3" href="">
@@ -78,7 +78,7 @@
                 </a>
             </li>
 
-            <li>
+            <li class="w-25">
                 <a class="dc_power_visa d-flex align-items-center gap-3" href="">
 
                     <img src="{{Vite::asset('resources/img/buy-dc-power-visa.svg')}}" alt="">
