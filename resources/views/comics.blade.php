@@ -2,10 +2,9 @@
 
 @section('content')
 
-<div class="container">
+<div id="jumbotron"></div>
 
-    <h2>Home page</h2>
+<div class="comics_list"></div>
 
-</div>
 
 @endsection

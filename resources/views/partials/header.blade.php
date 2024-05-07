@@ -21,7 +21,7 @@
     </div>
 
     <!-- Header Navbar -->
-    <div id="navbar" class="container d-flex align-items-center justify-content-between">
+    <div id="navbar" class="container d-flex align-items-center justify-content-between py-4">
 
       <div class="logo">
         <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="">
