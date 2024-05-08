@@ -22,20 +22,29 @@
   <div id="navbar" class="container d-flex align-items-center justify-content-between py-4">
 
     <div class="logo">
-      <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="">
+      <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
     </div>
 
     <nav class="nav justify-content-center">
-      <a class="nav-link {{Route::currentRouteName() === 'characters' ? 'active' : '' }}" href="{{route('characters')}}">CHARACTERS</a>
-      <a class="nav-link {{Route::currentRouteName() === 'comics' ? 'active' : '' }}" href="{{route('comics')}}">COMICS</a>
-      <a class="nav-link {{Route::currentRouteName() === 'movies' ? 'active' : '' }}" href="{{route('movies')}}">MOVIES</a>
-      <a class="nav-link {{Route::currentRouteName() === 'tv' ? 'active' : '' }}" href="{{route('tv')}}">TV</a>
-      <a class="nav-link {{Route::currentRouteName() === 'games' ? 'active' : '' }}" href="{{route('games')}}">GAMES</a>
-      <a class="nav-link {{Route::currentRouteName() === 'collectibles' ? 'active' : '' }}" href="{{route('collectibles')}}">COLLECTIBLES</a>
-      <a class="nav-link {{Route::currentRouteName() === 'videos' ? 'active' : '' }}" href="{{route('videos')}}">VIDEOS</a>
-      <a class="nav-link {{Route::currentRouteName() === 'fans' ? 'active' : '' }}" href="{{route('fans')}}">FANS</a>
-      <a class="nav-link {{Route::currentRouteName() === 'news' ? 'active' : '' }}" href="{{route('news')}}">NEWS</a>
-      <a class="nav-link {{Route::currentRouteName() === 'shop' ? 'active' : '' }}" href="{{route('shop')}}">SHOP <i class="fa-solid fa-caret-down fa-xs"></i> </a>
+      <a class="nav-link {{ Route::currentRouteName() === 'characters' ? 'active' : '' }}"
+        href="{{ route('characters') }}">CHARACTERS</a>
+      <a class="nav-link {{ Route::currentRouteName() === 'comics' || 'comic' ? 'active' : '' }}"
+        href="{{ route('comics') }}">COMICS</a>
+      <a class="nav-link {{ Route::currentRouteName() === 'movies' ? 'active' : '' }}"
+        href="{{ route('movies') }}">MOVIES</a>
+      <a class="nav-link {{ Route::currentRouteName() === 'tv' ? 'active' : '' }}" href="{{ route('tv') }}">TV</a>
+      <a class="nav-link {{ Route::currentRouteName() === 'games' ? 'active' : '' }}"
+        href="{{ route('games') }}">GAMES</a>
+      <a class="nav-link {{ Route::currentRouteName() === 'collectibles' ? 'active' : '' }}"
+        href="{{ route('collectibles') }}">COLLECTIBLES</a>
+      <a class="nav-link {{ Route::currentRouteName() === 'videos' ? 'active' : '' }}"
+        href="{{ route('videos') }}">VIDEOS</a>
+      <a class="nav-link {{ Route::currentRouteName() === 'fans' ? 'active' : '' }}"
+        href="{{ route('fans') }}">FANS</a>
+      <a class="nav-link {{ Route::currentRouteName() === 'news' ? 'active' : '' }}"
+        href="{{ route('news') }}">NEWS</a>
+      <a class="nav-link {{ Route::currentRouteName() === 'shop' ? 'active' : '' }}" href="{{ route('shop') }}">SHOP
+        <i class="fa-solid fa-caret-down fa-xs"></i> </a>
       </ul>
 
       <div class="search d-flex align-items-center px-4">

@@ -1,0 +1,50 @@
+#divider {
+  height: 70px;
+  background-color: $dc-primary-color;
+  position: relative;
+
+  .cover_container {
+    width: 210px;
+    position: absolute;
+    transform: translate(0, -100%);
+    top: 75%;
+    left: 23.6%;
+  }
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  background-color: $dc-lighter-color;
+  padding: 5rem 6rem;
+
+  .comic_title {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: bold;
+    color: $dc-comic-title-font-color;
+  }
+
+  .price_availability {
+
+    background-color: #55ba59;
+    font-weight: bold;
+    color: $dc-lighter-color;
+    border-bottom: 1px solid #357739;
+
+    .price {
+      border-right: 1px solid #357739;
+    }
+
+    span {
+      color: #b7fa9a;
+    }
+  }
+
+  .adv_title {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: bold;
+    color: #474a49;
+  }
+}

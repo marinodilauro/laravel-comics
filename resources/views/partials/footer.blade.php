@@ -2,7 +2,7 @@
 
   <div id="footer_top">
 
-    <div class="wrapper ">
+    <div class="footer_top_wrapper">
       <div class="container">
         <div class="row">
 

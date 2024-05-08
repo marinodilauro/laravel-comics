@@ -20,6 +20,14 @@ Route::get('/', function () {
     return view('comics', compact('comics'));
 })->name('comics');
 
+Route::get('/comics/{id}', function ($id) {
+
+    abort_unless($id >= 0 && $id < count(config('comics')), 404, 'NOT FOUND');
+    $comic = config('comics')[$id];
+
+    return view('comic', compact('comic'));
+})->name('comic');
+
 Route::get('/characters', function () {
     return view('characters');
 })->name('characters');

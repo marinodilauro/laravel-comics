@@ -1,6 +1,5 @@
 #comics_list {
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.8rem;
+
   background-color: $dc-dark-color;
   color: $dc-lighter-color;
   position: relative;
@@ -16,11 +15,21 @@
     padding: 16px 36px 16px 36px;
   }
 
-  img {
-    height: 196px;
-    aspect-ratio: 1;
-    object-fit: cover;
-    object-position: top;
+  a {
+    text-decoration: none;
+    color: $dc-lighter-color;
+
+    .comic_serie {
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.95rem;
+    }
+
+    img {
+      height: 196px;
+      aspect-ratio: 1;
+      object-fit: cover;
+      object-position: top;
+    }
   }
 
 
@@ -37,7 +46,7 @@
 #cta_banner {
   background-color: $dc-primary-color;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 
   a {
     text-decoration: none;
