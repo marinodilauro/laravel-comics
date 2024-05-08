@@ -17,7 +17,7 @@ Route::get('/', function () {
 
     $comics = config('comics');
 
-    return view('comics', compact('comics'));
+    return view('comics.index', compact('comics'));
 })->name('comics');
 
 Route::get('/comics/{id}', function ($id) {
@@ -25,7 +25,7 @@ Route::get('/comics/{id}', function ($id) {
     abort_unless($id >= 0 && $id < count(config('comics')), 404, 'NOT FOUND');
     $comic = config('comics')[$id];
 
-    return view('comic', compact('comic'));
+    return view('comics.show', compact('comic'));
 })->name('comic');
 
 Route::get('/characters', function () {

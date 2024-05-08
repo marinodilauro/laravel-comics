@@ -28,7 +28,7 @@
     <nav class="nav justify-content-center">
       <a class="nav-link {{ Route::currentRouteName() === 'characters' ? 'active' : '' }}"
         href="{{ route('characters') }}">CHARACTERS</a>
-      <a class="nav-link {{ Route::currentRouteName() === 'comics' || 'comic' ? 'active' : '' }}"
+      <a class="nav-link {{ Route::currentRouteName() === 'comics' || Route::currentRouteName() === 'comic' ? 'active' : '' }}"
         href="{{ route('comics') }}">COMICS</a>
       <a class="nav-link {{ Route::currentRouteName() === 'movies' ? 'active' : '' }}"
         href="{{ route('movies') }}">MOVIES</a>
