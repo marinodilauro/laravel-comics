@@ -2,7 +2,7 @@
 
   <div id="footer_top">
 
-    <div class="wrapper">
+    <div class="wrapper ">
       <div class="container">
         <div class="row">
 
@@ -95,7 +95,7 @@
         </div>
 
         <div class="col">
-          <div class="d-flex justify-content-center align-items-center gap-3">
+          <div class="d-flex justify-content-end align-items-center gap-5">
 
             <span>FOLLOW US</span>
 
