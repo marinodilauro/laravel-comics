@@ -3,40 +3,39 @@
     height: 405px;
     background-image: url('../../img/footer-bg.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     font-family: "Open Sans", sans-serif;
     font-size: 0.8rem;
     color: $dc-light-color;
-    background-color: $dc-primary-color;
-    object-fit: cover;
 
     .wrapper {
       height: 100%;
-      padding-top: 2.2rem;
+      padding: 2.2rem 0.75rem 2.2rem 0.75rem;
+      position: relative;
+      display: flex;
+      align-items: center;
 
       .row {
         height: 100%;
+
+        h4 {
+          font-weight: bold;
+          color: $dc-lighter-color;
+          font-family: "PT Sans Narrow", sans-serif;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+      }
+
+      img {
+        position: absolute;
+        top: -20%;
+        left: 54.5%;
       }
     }
 
-    .col-6 {
-      max-height: 335px;
-    }
-
-    h4 {
-      font-weight: bold;
-      color: $dc-lighter-color;
-      font-family: "PT Sans Narrow", sans-serif;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    img {
-      position: relative;
-      top: -125px;
-    }
   }
 
   #footer_bottom {
