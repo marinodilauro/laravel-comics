@@ -29,37 +29,41 @@ Route::get('/comics/{id}', function ($id) {
 })->name('comic');
 
 Route::get('/characters', function () {
-    return view('characters');
+    return redirect('/wip');
 })->name('characters');
 
 Route::get('/movies', function () {
-    return view('movies');
+    return redirect('/wip');
 })->name('movies');
 
 Route::get('/tv', function () {
-    return view('tv');
+    return redirect('/wip');
 })->name('tv');
 
 Route::get('/games', function () {
-    return view('games');
+    return redirect('/wip');
 })->name('games');
 
 Route::get('/collectibles', function () {
-    return view('collectibles');
+    return redirect('/wip');
 })->name('collectibles');
 
 Route::get('/videos', function () {
-    return view('videos');
+    return redirect('/wip');
 })->name('videos');
 
 Route::get('/fans', function () {
-    return view('fans');
+    return redirect('/wip');
 })->name('fans');
 
 Route::get('/news', function () {
-    return view('news');
+    return redirect('/wip');
 })->name('news');
 
 Route::get('/shop', function () {
-    return view('shop');
+    return redirect('/wip');
 })->name('shop');
+
+Route::get('/wip', function () {
+    return view('wip');
+})->name('wip');

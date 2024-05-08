@@ -1,0 +1,26 @@
+#wip_page {
+  background-color: $dc-lighter-color;
+  color: $dc-lighter-color;
+  position: relative;
+  z-index: 2;
+
+  p {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: bold;
+    color: $dc-font-dark-color;
+  }
+
+  .check_comics_btn {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ffffff;
+    width: 200px;
+    background-color: #0282f9;
+
+    a {
+      text-decoration: none;
+      color: $dc-lighter-color;
+    }
+  }
+}
